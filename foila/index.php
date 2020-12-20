@@ -1,7 +1,7 @@
 <html>
 
 <body>
-	<p> hello gays..apa kabar</p>
+	<p> hello gays </p>
 </body>
 
 </html>
