@@ -1,0 +1,29 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  db:
+     image: mysql:8.0
+     container_name: db
+     environment
+     MYSQL_ROOT_PASSWORD: root_pas
+     MYSQL_DATABASE: app_db
+     MYSQL_USER: db_user_pass
+     ports:
+      - "3306:3306"
+      volume
+      - dbdata:/var/lib/mysql
+
+      app:
+        image: elingpujana_room3/gianyar_app
+        container_name: app
+        links:
+          - db
+          environment:
+            MYSQL_DATABASE: app_db
+            MYSQL_USER: db_user
+            MYSQL_PASSWORD: db_user_pass
+            restart: always
+            ports:
+              - 8081:80
+
+          volumes:
+            dbdata
