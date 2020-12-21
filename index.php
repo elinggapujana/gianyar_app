@@ -45,7 +45,6 @@
 	$userData	=	$db->getAllRecords('user','*',$condition,'ORDER BY username DESC');
 	?>
    	<div class="container">
-		<h1><a href="https://learncodeweb.com/php/php-crud-in-bootstrap-4-with-search-functionality/">PHP CRUD in Bootstrap with search and pagination</a></h1>
 		<div class="card">
 			<div class="card-header"><i class="fa fa-fw fa-globe"></i> <strong>Browse User</strong> <a href="add-users.php" class="float-right btn btn-dark btn-sm"><i class="fa fa-fw fa-plus-circle"></i> Add Users</a></div>
 			<div class="card-body">
@@ -60,7 +59,7 @@
 					echo	'<div class="alert alert-danger"><i class="fa fa-exclamation-triangle"></i> There is some thing wrong <strong>Please try again!</strong></div>';
 				}
 				?>
-				<div class="col-sm-12">
+				<!--<div class="col-sm-12">
 					<h5 class="card-title"><i class="fa fa-fw fa-search"></i> Find User</h5>
 					<form method="get">
 						<div class="row">
@@ -173,7 +172,7 @@
 					</form>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<hr>
 		
 		<div>

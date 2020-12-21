@@ -27,7 +27,7 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
 					'bujur'=>$bujur,
 					'keterangan'=>$keterangan,
 						);
-			$insert	=	$db->insert('users',$data);
+			$insert	=	$db->insert('penerima_bantuan',$data);
 			if($insert){
 				header('location:browse-users.php?msg=ras');
 				exit;
