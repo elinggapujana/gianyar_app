@@ -184,7 +184,15 @@
 						<th>Sr#</th>
 						<th>ID</th>
 						<th>Alamat</th>
-						<th>User Phone</th>
+						<th>Desa_ID</th>
+						<th>Kecamatan_ID</th>
+						<th>Nama Penerima</th>
+						<th>Nomor KTP</th>
+						<th>Nomor KK</th>
+						<th>Jenis Bantuan ID</th>
+						<th>Lintang</th>
+						<th>Bujur</th>
+						<th>Keterangan</th>
 						<th class="text-center">Record Date</th>
 						<th class="text-center">Action</th>
 					</tr>
