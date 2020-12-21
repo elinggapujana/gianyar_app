@@ -16,9 +16,17 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
 		exit;
 	}
 	$data	=	array(
-					'username'=>$username,
-					'useremail'=>$useremail,
-					'userphone'=>$userphone,
+					'id'=>$id,
+					'alamat'=>$alamat,
+					'desa_id'=>$desa_id,
+					'kecamatan_id'=>$kecamatan_id,
+					'nama_penerima'=>$nama_penerima,
+					'nomor_ktp'=>$nomor_ktp,
+					'nomor_kk'=>$nomor_kk,
+					'jenis_bantuan'=>$jenis_bantuan,
+					'lintang'=>$lintang,
+					'bujur'=>$bujur,
+					'keterangan'=>$keterangan,
 					);
 	$update	=	$db->update('users',$data,array('id'=>$editId));
 	if($update){
