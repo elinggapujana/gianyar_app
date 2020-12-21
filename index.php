@@ -4,7 +4,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>PHP CRUD in Bootstrap with search and pagination</title>
 	
 	<link rel="shortcut icon" href="https://demo.learncodeweb.com/favicon.ico">
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" type="text/css">
@@ -43,7 +42,7 @@
 
 	}
 	
-	$userData	=	$db->getAllRecords('users','*',$condition,'ORDER BY id DESC');
+	$userData	=	$db->getAllRecords('user','*',$condition,'ORDER BY username DESC');
 	?>
    	<div class="container">
 		<h1><a href="https://learncodeweb.com/php/php-crud-in-bootstrap-4-with-search-functionality/">PHP CRUD in Bootstrap with search and pagination</a></h1>
