@@ -1,10 +1,10 @@
-version: "3.9"  # optional since v1.27.0
+version: "3"  # optional since v1.27.0
 services:
   db:
      image: mysql:8.0
      container_name: db
      environment
-     MYSQL_ROOT_PASSWORD: root_pas
+     MYSQL_ROOT_PASSWORD: root_pass
      MYSQL_DATABASE: app_db
      MYSQL_USER: db_user_pass
      ports:
