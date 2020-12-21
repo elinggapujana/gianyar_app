@@ -1,8 +1,13 @@
-<?php 
-include_once('config.php');
-if(isset($_REQUEST['delId']) and $_REQUEST['delId']!=""){
-	$db->delete('users',array('id'=>$_REQUEST['delId']));
-	header('location: browse-users.php?msg=rds');
-	exit;
-}
+<?php
+// include database connection file
+include_once("config.php");
+
+// Get id from URL to delete that user
+$id = $_GET['id'];
+
+// Delete user row from table based on given id
+$result = mysqli_query($mysqli, "DELETE FROM penerima_bantuan WHERE id=$id");
+
+// After delete redirect to Home, so that latest user list will be displayed.
+header("Location:index.php");
 ?>
